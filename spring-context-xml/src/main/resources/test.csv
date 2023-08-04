@@ -1,0 +1,5 @@
+Id;Question;RightOption;Option1;Option2;Option3
+1;What is Java?;3;Motorcycle;Island;Program language
+2;What is Spring?;2;Season of the year;Framework for Java;Growing in my garden
+3;What is a Spring Context?;1;Your tickets to bringing beans to your Java application;Spring mood;What i put in salad
+4;Where configured beans are stored?;1;Map;List;Set

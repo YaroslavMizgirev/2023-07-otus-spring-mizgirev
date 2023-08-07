@@ -1,0 +1,8 @@
+name: Build Gradle project
+on: workflow_dispatch
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greetings to console
+      run: echo Hello github Actions

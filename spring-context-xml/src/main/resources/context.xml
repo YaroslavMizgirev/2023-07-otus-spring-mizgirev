@@ -10,11 +10,14 @@
     <context:annotation-config/>
     <context:component-scan base-package="xml"/>
 
-    <bean id="interviewDao" class="xml.dao.InterviewParser"/>
-
-    <bean id="interviewService" class="xml.service.InterviewProcess">
+    <bean id="interviewDao" class="xml.dao.QuestionDao">
         <constructor-arg name="fileName" value="/test.csv"/>
         <constructor-arg name="delimiter" value=";"/>
+    </bean>
+
+    <bean id="interviewService" class="xml.service.InterviewProcess">
+<!--        <constructor-arg name="fileName" value="/test.csv"/>-->
+<!--        <constructor-arg name="delimiter" value=";"/>-->
         <constructor-arg name="interviewParser" ref="interviewDao"/>
     </bean>
 

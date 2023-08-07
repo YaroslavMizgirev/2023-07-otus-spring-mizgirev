@@ -1,5 +1,5 @@
-Id;Question;RightOption;Option1;Option2;Option3
-1;What is Java?;3;Motorcycle;Island;Program language
-2;What is Spring?;2;Season of the year;Framework for Java;Growing in my garden
-3;What is a Spring Context?;1;Your tickets to bringing beans to your Java application;Spring mood;What i put in salad
-4;Where configured beans are stored?;1;Map;List;Set
+Id;Question;Option1;RightOption1;Option2;RightOption2;Option3;RightOption3
+1;What is Java?;Motorcycle;false;Island;false;Program language;true
+2;What is Spring?;Season of the year;false;Framework for Java;true;Growing in my garden;false
+3;What is a Spring Context?;Your tickets to bringing beans to your Java application;true;Spring mood;false;What i put in salad;false
+4;Where configured beans are stored?;Map;true;List;false;Set;false

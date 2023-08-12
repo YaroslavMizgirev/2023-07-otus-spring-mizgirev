@@ -17,40 +17,34 @@ jobs:
       - name: Show all directories
         run: Get-ChildItem -Recurse -Force
       - name: Run Gradle script - build
-        run: .\spring-xml-context\gradlew.bat help
+        run: .\spring-xml-context\gradlew.bat build
 
-#   path_project_linux:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v3.5.3
-#       - name: Print list of directory
-#         run: ls -la
-#       - name: Setup Java JDK
-#         uses: actions/setup-java@v3.12.0
-#         with:
-#           distribution: 'liberica'
-#           java-version: '17'
-#       - name: Setup and execute Gradle 'build' task
-#         uses: gradle/gradle-build-action@v2
-#         with:
-#           arguments: build
-#       - name: Run Gradle script
-#         run: ./gradlew help
+  build_spring-xml-context_project_in_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.12.0
+        with:
+          distribution: 'liberica'
+          java-version: '17'
+      - name: Show all directories
+        run: ls -Rla
+      - name: Run Gradle script - build
+        run: ./spring-xml-context/gradlew build
   
-#   path_project_macos:
-#     runs-on: macos-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v3.5.3
-#       - name: Print list of directory
-#         run: ls -la
-#       - name: Setup Java JDK
-#         uses: actions/setup-java@v3.12.0
-#         with:
-#           distribution: 'liberica'
-#           java-version: '17'
-#       - name: Setup and execute Gradle 'build' task
-#         uses: gradle/gradle-build-action@v2
-#         with:
-#           attributes: build
+  build_spring-xml-context_project_in_macos:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.5.3
+      - name: Setup Java JDK
+        uses: actions/setup-java@v3.12.0
+        with:
+          distribution: 'liberica'
+          java-version: '17'
+      - name: Show all directories
+        run: ls -Rla
+      - name: Run Gradle script - build
+        run: ./spring-xml-context/gradlew build

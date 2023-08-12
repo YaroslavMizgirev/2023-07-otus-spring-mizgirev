@@ -1,9 +1,9 @@
-name: Print build process
-# on: workflow_dispatch
-on: pull_request
+name: Gradle build project
+on: workflow_dispatch
+# on: pull_request
 
 jobs:
-  
+
   path_project_windows:
     runs-on: windows-latest
     steps:
@@ -17,7 +17,7 @@ jobs:
           distribution: 'liberica'
           java-version: '17'
       - name: Run Gradle script
-        run: ./gradlew.bat build
+        run: ./gradlew.bat help
 
 #   path_project_linux:
 #     runs-on: ubuntu-latest

@@ -17,7 +17,9 @@ jobs:
       - name: Show all directories
         run: Get-ChildItem -Recurse -Force
       - name: Run Gradle script - build
-        run: .\spring-xml-context\gradlew.bat build
+        run: |
+          cd spring-xml-context
+          .\gradlew.bat build
 
   build_spring-xml-context_project_in_linux:
     runs-on: ubuntu-latest
@@ -32,7 +34,10 @@ jobs:
       - name: Show all directories
         run: ls -Rla
       - name: Run Gradle script - build
-        run: ./spring-xml-context/gradlew build
+        run: |
+          cd spring-xml-context
+          chmod 777 ./gradlew
+          ./gradlew build
   
   build_spring-xml-context_project_in_macos:
     runs-on: macos-latest
@@ -47,4 +52,7 @@ jobs:
       - name: Show all directories
         run: ls -Rla
       - name: Run Gradle script - build
-        run: ./spring-xml-context/gradlew build
+        run: |
+          cd spring-xml-context
+          chmod 777 ./gradlew
+          ./gradlew build

@@ -14,10 +14,10 @@ jobs:
         with:
           distribution: 'liberica'
           java-version: '17'
-      - name: Print list of directory
-        run: Get-ChildItem -Force
-      - name: Run Gradle script
-        run: /spring-xml-context/gradlew.bat help
+      - name: Show all directories
+        run: Get-ChildItem -Recurse -Force
+      - name: Run Gradle script - build
+        run: .\spring-xml-context\gradlew.bat help
 
 #   path_project_linux:
 #     runs-on: ubuntu-latest

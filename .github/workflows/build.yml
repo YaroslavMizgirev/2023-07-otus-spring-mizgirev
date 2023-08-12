@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
 
-  path_project_windows:
+  build_spring-xml-context_project_in_windows:
     runs-on: windows-latest
     steps:
       - name: Checkout

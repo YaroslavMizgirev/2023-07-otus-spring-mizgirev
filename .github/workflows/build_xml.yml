@@ -1,4 +1,4 @@
-name: Gradle build project - Spring-xml-context
+name: Gradle build all projects
 on: workflow_dispatch
 # on: pull_request
 

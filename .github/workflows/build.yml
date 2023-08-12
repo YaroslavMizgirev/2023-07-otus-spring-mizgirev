@@ -16,10 +16,8 @@ jobs:
           java-version: '17'
       - name: Print list of directory
         run: Get-ChildItem -Force
-      - name: Change directory of current project
-        run: cd spring-xml-context
       - name: Run Gradle script
-        run: ./gradlew.bat help
+        run: /spring-xml-context/gradlew.bat help
 
 #   path_project_linux:
 #     runs-on: ubuntu-latest

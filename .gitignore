@@ -44,41 +44,40 @@ build/
 gradle-app.setting
 !gradle-wrapper.jar
 
-# IntelliJ
-out/
+### IntelliJ IDEA ###
+#.idea/modules.xml
+#.idea/jarRepositories.xml
+#.idea/compiler.xml
+#.idea/libraries/
 .idea/
 .idea_modules/
+*.iws
 *.iml
 *.ipr
-*.iws
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
-# Eclipse
-.settings/
-bin/
-tmp/
-.metadata
+### Eclipse ###
+.apt_generated
 .classpath
-.project
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.loadpath
 .factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# NetBeans
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# Visual Studio Code
+### VS Code ###
 .vscode/
-.code-workspace
 
-# OS X
+### Mac OS ###
 .DS_Store

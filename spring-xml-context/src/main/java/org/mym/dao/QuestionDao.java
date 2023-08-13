@@ -1,7 +1,7 @@
 package org.mym.dao;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.Level;
 import org.mym.domain.Answer;
@@ -16,12 +16,12 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
 
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Getter
 @Log4j2
 public class QuestionDao implements DAO<Question> {
-    private String fileName;
-    private String delimiter;
+    private final String fileName;
+    private final String delimiter;
 
     @Override
     public Collection<Question> getAllQuestions() {

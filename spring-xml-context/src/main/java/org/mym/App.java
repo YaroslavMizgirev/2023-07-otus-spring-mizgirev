@@ -3,11 +3,13 @@
  */
 package org.mym;
 
-import org.mym.config.AppConfig;
-
+import lombok.extern.log4j.Log4j2;
+import org.mym.config.ProcessConfig;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+@Log4j2
 public class App {
 
     public static void main(String[] args) {
-        new AppConfig().run();
+        ProcessConfig.CONFIG.run("/context.xml", ClassPathXmlApplicationContext::new);
     }
 }

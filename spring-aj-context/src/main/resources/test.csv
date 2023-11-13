@@ -1,0 +1,6 @@
+Id;Question;Option1;IsAnswer1;Option2;IsAnswer2;Option3;IsAnswer3
+1;What is Java?;Motorcycle;false;Island;false;Program language;true
+2;What is Spring?;Season of the year;false;Framework for Java;true;Growing in my garden;false
+3;What is a Spring Context?;Your tickets to bringing beans to your Java application;true;Spring mood;false;What i put in salad;false
+4;Where configured beans are stored?;Map;true;List;false;Set;false
+5;What annotations Spring declares beans?;@Component;true;@Configuration;true;@PropertySource;false

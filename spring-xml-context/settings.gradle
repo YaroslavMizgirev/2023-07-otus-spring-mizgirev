@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'spring-xml-context'
-include('app')
+//include('app')

@@ -3,12 +3,13 @@
  */
 package org.mym;
 
+import lombok.extern.log4j.Log4j2;
+import org.mym.config.ProcessConfig;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+@Log4j2
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        ProcessConfig.CONFIG.run("/context.xml", ClassPathXmlApplicationContext::new);
     }
 }
